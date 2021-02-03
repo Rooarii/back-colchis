@@ -1,0 +1,30 @@
+{
+  "name": "colchis",
+  "version": "1.0.0",
+  "description": "wcs checkpoint 4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Rooarii/back-colchis.git"
+  },
+  "author": "Rooarii MANUEL",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rooarii/back-colchis/issues"
+  },
+  "homepage": "https://github.com/Rooarii/back-colchis#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "db-migrate": "^0.11.12",
+    "db-migrate-mysql": "^2.1.2",
+    "express": "^4.17.1",
+    "mysql2": "^2.2.5"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.7"
+  }
+}
