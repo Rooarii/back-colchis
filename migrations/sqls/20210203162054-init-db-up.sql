@@ -12,6 +12,7 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,N
 CREATE TABLE IF NOT EXISTS `social_class` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `social_class` VARCHAR(45) NOT NULL,
+  `social_class_id` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
@@ -22,7 +23,7 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `social_rank` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `social_rank` VARCHAR(45) NULL,
-  `social_rank_name` VARCHAR(45) NOT NULL,
+  `social_rank_id` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
@@ -35,6 +36,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `firstname` VARCHAR(45) NOT NULL,
   `lastname` VARCHAR(45) NOT NULL,
   `mail` VARCHAR(45) NOT NULL,
+  `user_image` VARCHAR(200),
   `social_class_id` INT NOT NULL,
   `social_rank_id` INT NOT NULL,
   PRIMARY KEY (`id`, `social_class_id`, `social_rank_id`),
@@ -74,7 +76,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `county` (
   `id` INT NOT NULL AUTO_INCREMENT,
-  `county_name` VARCHAR(45) NULL,
+  `name` VARCHAR(45) NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
