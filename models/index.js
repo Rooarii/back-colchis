@@ -1,3 +1,3 @@
-const RoyaltyModel = require('./royalty')
+const UserModel = require('./user')
 
-module.exports = { RoyaltyModel };
+module.exports = { UserModel };

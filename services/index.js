@@ -1,3 +1,3 @@
-const RoyaltyService = require('./royalty')
+const UserService = require('./user')
 
-module.exports = { RoyaltyService };
+module.exports = { UserService };

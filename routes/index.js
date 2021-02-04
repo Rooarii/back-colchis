@@ -1,10 +1,9 @@
-const royalty = require('./royalty')
-
-const router = require('express').Router();
+const user = require('./user')
 
 module.exports =(app)=>{
 
-  app.use('/api/royalty', royalty)
+  // generic route for users (bellatores, oratores, laboratores)
+  app.use('/api', user)
 
   // API home page  
   app.use('/', 
@@ -13,7 +12,3 @@ module.exports =(app)=>{
     }
   )
 }
-
-// router.use('/api', royalty )
-
-// module.exports = router;
