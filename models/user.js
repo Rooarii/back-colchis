@@ -1,6 +1,14 @@
 const connection = require("../db/db")
 
-class Royalty {
+
+
+class User {
+  constructor(firstname, lastname, mail, user_image) {
+    this.firstname = firstname;
+    this.lastname = lastname;
+    this.mail = mail;
+    this.user_image = user_image;
+  }
 
   // function that allows to get all the royalty
   static async getRoyalty(){
@@ -51,6 +59,42 @@ class Royalty {
     return result;
   }
   
+  static async createUser(firstname, lastname, mail, user_image, social_class, social_rank ){
+    // const user = new User(firstname, lastname, mail, user_image)
+    // console.log(user.firstname)
+
+    // querys
+    const socialClassIdQuery = `SELECT id FROM social_class WHERE  social_class =?;`;
+    const socialRankIdQuery = `SELECT id FROM social_rank WHERE  social_rank =?;`;
+    const query = `INSERT INTO user (firstname, lastname, mail, user_image, social_class_id, social_rank_id) VALUES (?,?,?,?,?,?);`;
+
+    const getSocialClassId = async()=>{
+      const [{id: socialClassId}] = await connection.query(socialClassIdQuery,[social_class]);
+      return {"socialClassId":socialClassId}
+    }
+    
+    const getSocialRankId = async()=>{
+      const [{id: socialRankId}] = await connection.query(socialRankIdQuery,[social_rank]);
+      return {"socialRankId":socialRankId};
+    }
+
+    const result = await Promise.all([getSocialClassId(), getSocialRankId()]);
+    console.log(result);
+      
+    const { socialClassId } = result[0];
+    const { socialRankId } = result[1];
+    console.log(socialClassId, socialRankId)
+
+    const getIds = async (socialClassId, socialRankId) => {
+
+      const {insertId: id} = await connection.query(query, [firstname, lastname, mail, user_image, socialClassId, socialRankId]);
+      return {id, firstname, lastname, mail, user_image, social_class, social_rank};
+    }
+
+    return getIds(socialClassId, socialRankId);
+    
+  }
 }
 
-module.exports = Royalty;
+module.exports = User;
+

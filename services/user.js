@@ -17,6 +17,11 @@ class UserService {
     return laboratores;
   }
 
+  static async createUser(firstname, lastname, mail, user_image, social_class, social_rank ) {
+    const userCreated = await UserModel.createUser(firstname, lastname, mail, user_image, social_class, social_rank );
+    return userCreated;
+  }
+
 }
 
 module.exports = UserService;

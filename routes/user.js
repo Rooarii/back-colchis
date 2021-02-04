@@ -1,6 +1,9 @@
 const router = require('express').Router();
-
+// import services
 const { UserService } = require("../services")
+
+// import middlewares
+const { ValidateUser } = require('../middlewares')
 
 router.get("/royalty", async (req,res, next)=>{
   try {
@@ -29,6 +32,17 @@ router.get("/laboratores", async (req,res, next)=>{
   } catch (error) {
     console.log(`💀: ${error.message}`)
     next(error);
+  }
+})
+
+router.post("/users", ValidateUser, async (req,res, next)=>{
+  const { firstname, lastname, mail, user_image, social_class, social_rank } = req.body;
+  try {
+    const userCreated = await UserService.createUser(firstname, lastname, mail, user_image, social_class, social_rank );
+    res.status(201).json(userCreated);
+  } catch (err) {
+    console.log(err.message);
+    next(err);
   }
 })
 
