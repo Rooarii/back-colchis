@@ -50,7 +50,7 @@ VALUES
   ("Audrey", "CASSAGNET", "audrey.cassagnet@wildcodeschool.com", "https://cdn.glitch.com/774f67da-7f04-4bcb-b47f-3d6dc10bb0c7%2Fthumbnails%2FAC.png?1590947628327", 1,2),
   ("Marylou", "MOULON", "marylou.moulon@wildcodeschool.com", "https://cdn.glitch.com/774f67da-7f04-4bcb-b47f-3d6dc10bb0c7%2Fthumbnails%2Fmm.png?1590947262623", 1,5),
   ("Colas", "DURCY", "colas.durcy@gmail.com", "https://media-exp1.licdn.com/dms/image/C4D03AQGUOhkufVo7LA/profile-displayphoto-shrink_200_200/0/1607251727070?e=1617840000&v=beta&t=ZmrnSgUmD3t3YH2wILLGRZKb4MIaikkIoVoz5cBnc0E", 1,8),
-  ("Hervé", "Meste", "ou.moulon@wildcodeschool.com", "https://cdn.glitch.com/774f67da-7f04-4bcb-b47f-3d6dc10bb0c7%2Fthumbnails%2Fmm.png?1590947262623", 2,6);
+  ("Hervé", "Meste", "herve.meste@gmail.com", "https://media-exp1.licdn.com/dms/image/C4E35AQEQ2MXoBuqrnQ/profile-framedphoto-shrink_200_200/0/1607762017934?e=1612580400&v=beta&t=hYM6fD6amanjl1kQEY0LOq96RQlt_sPDDbhl4r-Z8aE", 2,6);
 
 INSERT INTO admin (user_id) VALUES (1);
 
