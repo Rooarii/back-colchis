@@ -1,4 +1,34 @@
-# Wild code School checkpoint 4
+# Wild code school checkpoint 4: back-colchis
+
+## Develop the front-end part of a mobile application:
+
+1. Model an application;
+
+2. Build a static and adaptable web user interface
+
+3. Develop a dynamic web user interface
+
+4. Create a user interface with a content management solution
+
+## Develop the back-end part of a mobile application:
+
+1. Create a database
+
+2. Develop data access components
+
+3. Develop the back-end part of a Web or Mobile Web application
+
+4. Develop and implement components in a content management application
+
+## Project Ressources
+
+[Wireframe](https://www.figma.com/proto/ixpD7mrSXXT5qto8ZvnxeB/mobile?node-id=0%3A3&scaling=min-zoom)
+
+[Product Backlog](https://docs.google.com/spreadsheets/d/1ZhJtQ72x0stmLLW9P8w02vBgRf_rZt6LtFw0oyYC-wg/edit?usp=sharing)
+
+**Conceptual data model**
+
+![Conceptual data model](https://user-images.githubusercontent.com/49068774/107053066-b1de6c80-67ce-11eb-8ba6-15a23181860f.png)
 
 # Setup
 
