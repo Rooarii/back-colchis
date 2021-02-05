@@ -15,6 +15,16 @@ router.get("/royalty", async (req,res, next)=>{
   }
 })
 
+router.get("/bellatores", async (req,res, next)=>{
+  try {
+    const oratores = await UserService.getAllBellatores()
+    res.status(200).json(oratores);
+  } catch (error) {
+    console.log(`💀: ${error.message}`)
+    next(error);
+  }
+})
+
 router.get("/oratores", async (req,res, next)=>{
   try {
     const oratores = await UserService.getAllOratores()

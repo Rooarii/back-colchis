@@ -7,6 +7,11 @@ class UserService {
     return royalty;
   }
 
+  static async getAllBellatores() {
+    const bellatores = await UserModel.getAllBellatores();
+    return bellatores;
+  }
+
   static async getAllOratores() {
     const oratores = await UserModel.getAllOratores();
     return oratores;

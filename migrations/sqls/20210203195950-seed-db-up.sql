@@ -46,6 +46,12 @@ INSERT INTO user
 		social_rank_id
    )
 VALUES
-	("Rooarii", "MANUEL", "rooarii.manuel@gmail.com", "https://avatars.githubusercontent.com/u/49068774?s=60&v=4", 1,1);
+	("Geoffroy", "PERIOT", "geoffroy.periot@wildcodeschool.com", "https://cdn.glitch.com/774f67da-7f04-4bcb-b47f-3d6dc10bb0c7%2Fthumbnails%2FGP.png?1590947619654", 1,1),
+  ("Audrey", "CASSAGNET", "audrey.cassagnet@wildcodeschool.com", "https://cdn.glitch.com/774f67da-7f04-4bcb-b47f-3d6dc10bb0c7%2Fthumbnails%2FAC.png?1590947628327", 1,2),
+  ("Marylou", "MOULON", "marylou.moulon@wildcodeschool.com", "https://cdn.glitch.com/774f67da-7f04-4bcb-b47f-3d6dc10bb0c7%2Fthumbnails%2Fmm.png?1590947262623", 1,5),
+  ("Colas", "DURCY", "colas.durcy@gmail.com", "https://media-exp1.licdn.com/dms/image/C4D03AQGUOhkufVo7LA/profile-displayphoto-shrink_200_200/0/1607251727070?e=1617840000&v=beta&t=ZmrnSgUmD3t3YH2wILLGRZKb4MIaikkIoVoz5cBnc0E", 1,8),
+  ("Hervé", "Meste", "ou.moulon@wildcodeschool.com", "https://cdn.glitch.com/774f67da-7f04-4bcb-b47f-3d6dc10bb0c7%2Fthumbnails%2Fmm.png?1590947262623", 2,6);
 
 INSERT INTO admin (user_id) VALUES (1);
+
+
